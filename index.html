@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>Project Shield - iGEM 2025</title>
     <style>
         body {
             font-family: sans-serif;
@@ -41,38 +41,186 @@
             bottom: 0;
             width: 100%;
         }
+
+        .hero-section {
+            background-color: #1a237e;
+            color: white;
+            padding: 4em 0;
+            text-align: center;
+        }
+
+        .project-summary {
+            background: white;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+
+        .key-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .content-section {
+            background: white;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+
+        .team-info {
+            text-align: center;
+            margin: 2em 0;
+        }
+
+        .references {
+            font-size: 0.9em;
+        }
+
+        .references li {
+            margin-bottom: 0.5em;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .member-card {
+            background: #f8f9fa;
+            padding: 1em;
+            border-radius: 8px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>Welcome to My Web Page</h1>
+    <header class="hero-section">
+        <h1>Project Shield</h1>
+        <p>Engineering a Phage-Delivered Decoy Protein to Combat Beta-Lactam Antibiotic Resistance</p>
     </header>
 
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is a sample web page. You can replace this text with your own content.  Tell your visitors about yourself or your organization. You can add images, videos, and other media to make your page more engaging.</p>
+        <section class="team-info">
+            <h2>Team Information</h2>
+            <p>National Tsing Hua University/Taiwan</p>
+            <p>iGEM 2025</p>
         </section>
 
-        <section>
-            <h2>My Interests</h2>
+        <section class="project-summary">
+            <h2>Project Overview</h2>
+            <p>Our innovative approach combines bacteriophage delivery systems with engineered decoy proteins to combat antibiotic resistance. By targeting beta-lactamase enzymes, we aim to restore the effectiveness of beta-lactam antibiotics and address one of the most pressing challenges in global health.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Project Motivation</h2>
+            <p>Antibiotic resistance represents one of the most significant threats to global public health. Our project addresses the critical challenge of beta-lactam antibiotic resistance, which renders many common antibiotics ineffective.</p>
+            
+            <h3>Background</h3>
+            <p>Beta-lactam antibiotics, including penicillin and amoxicillin, have been cornerstone treatments for bacterial infections. However, the rise of beta-lactamase-producing bacteria has severely compromised their effectiveness.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Project Design</h2>
+            <h3>Biological Parts</h3>
             <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
+                <li>Decoy Protein Gene (BBa_XXXXX)</li>
+                <li>Phage Expression System (BBa_XXXXX)</li>
+                <li>Promoter Systems (BBa_XXXXX)</li>
+            </ul>
+
+            <h3>Methods</h3>
+            <p>Our approach combines protein engineering, phage modification, and synthetic biology principles...</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Results and Discussion</h2>
+            <!-- Add your results content here -->
+        </section>
+
+        <section class="content-section">
+            <h2>Safety Considerations</h2>
+            <h3>Biosafety Measures</h3>
+            <ul>
+                <li>All work conducted in BSL-2 facilities</li>
+                <li>Standard operating procedures for phage handling</li>
+                <li>Risk assessment documentation</li>
             </ul>
         </section>
 
+        <section class="content-section">
+            <h2>Human Practices</h2>
+            <p>Our team engaged with multiple stakeholders including...</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Team Members</h2>
+            <div class="team-members">
+                <!-- Add team member cards here -->
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>References</h2>
+            <ol class="references">
+                <!-- Add your references here -->
+            </ol>
+        </section>
+
+        <section class="key-features">
+            <div class="feature-card">
+                <h3>Specificity & Mechanism</h3>
+                <p>Our decoy protein specifically targets beta-lactamase enzymes, mimicking the beta-lactam ring structure to act as a competitive inhibitor and prevent antibiotic degradation.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Phage Delivery System</h3>
+                <p>Utilizing engineered bacteriophages as delivery vehicles, we ensure targeted delivery of our decoy protein directly to resistant bacteria.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Protein Engineering</h3>
+                <p>Advanced computational modeling and directed evolution approaches optimize our decoy protein design for maximum effectiveness.</p>
+            </div>
+        </section>
+
         <section>
-            <h2>Contact Me</h2>
-            <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+            <h2>Implementation</h2>
+            <h3>Wet Lab Components</h3>
+            <ul>
+                <li>Protein engineering and characterization</li>
+                <li>Gene circuit design</li>
+                <li>Phage genome modification</li>
+                <li>Microbial culture and infection assays</li>
+            </ul>
+            
+            <h3>Dry Lab Integration</h3>
+            <ul>
+                <li>Computational modeling of protein interactions</li>
+                <li>Bioinformatics analysis for phage engineering</li>
+                <li>Data analysis and visualization</li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 My Web Page</p>
+        <p>&copy; 2025 iGEM Team - Project Shield</p>
     </footer>
-
 </body>
 </html>
